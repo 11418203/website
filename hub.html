@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>學習心得 | 林廷浩的學習手札</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fbf9f1",
+                        "inverse-primary": "#dec1ac",
+                        "secondary": "#5a6151",
+                        "inverse-surface": "#30312c",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#dec1ac",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-secondary-fixed-variant": "#42493b",
+                        "on-secondary-fixed": "#171d12",
+                        "tertiary-fixed-dim": "#f3b9aa",
+                        "surface-variant": "#e4e3db",
+                        "on-surface": "#1b1c17",
+                        "outline": "#80756d",
+                        "tertiary-container": "#573126",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#4e453e",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f5f4ec",
+                        "surface-container": "#f0eee6",
+                        "secondary-fixed-dim": "#c2c9b6",
+                        "surface-dim": "#dcdad2",
+                        "on-primary-container": "#bba08c",
+                        "inverse-on-surface": "#f3f1e9",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#653c31",
+                        "surface-tint": "#705a49",
+                        "background": "#fbf9f1",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#dee5d2",
+                        "surface-container-high": "#eae8e0",
+                        "on-secondary-container": "#5e6556",
+                        "primary-container": "#4a3728",
+                        "on-background": "#1b1c17",
+                        "primary": "#322214",
+                        "surface-bright": "#fbf9f1",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#3e1c12",
+                        "on-primary-fixed": "#28180b",
+                        "primary-fixed": "#fbddc7",
+                        "on-primary-fixed-variant": "#574333",
+                        "on-tertiary-container": "#cf998a",
+                        "on-tertiary-fixed": "#31120a",
+                        "outline-variant": "#d2c4bb",
+                        "secondary-container": "#dbe2cf",
+                        "surface-container-highest": "#e4e3db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1100px",
+                        "stack-sm": "16px",
+                        "stack-md": "32px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "64px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Literata", "serif"],
+                        "display": ["Literata", "serif"],
+                        "body-md": ["Quicksand", "sans-serif"],
+                        "body-lg": ["Quicksand", "sans-serif"],
+                        "label": ["Quicksand", "sans-serif"],
+                        "h2": ["Literata", "serif"],
+                        "h1": ["Literata", "serif"]
+                    },
+                    "fontSize": {
+                        "h3": ["22px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "label": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "h2": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "h1": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .paper-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col relative paper-texture">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_0_15px_rgba(74,55,40,0.05)]">
+        <div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+            <a class="font-display text-h3 font-bold text-primary drop-shadow-[0_0_10px_rgba(190,198,224,0.5)] flex items-center gap-2" href="index.html">
+                TING_HAO_PORTFOLIO
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="font-label text-label text-on-surface-variant hover:text-primary transition-colors" href="index.html">首頁</a>
+                <a class="font-label text-label text-primary border-b-2 border-primary pb-1 flex items-center gap-1" href="hub.html"><span class="material-symbols-outlined text-[18px]">hub</span>學習心得</a>
+                <a class="font-label text-label text-on-surface-variant hover:text-primary transition-colors" href="index.html#about">關於我</a>
+            </div>
+            <a class="hidden md:inline-flex bg-secondary text-on-secondary px-6 py-2 rounded-full font-label text-label hover:-translate-y-[2px] transition-all" href="#">與我聯絡</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-[120px] pb-margin-desktop px-gutter max-w-container-max mx-auto w-full relative z-10">
+        <header class="mb-stack-lg text-center flex flex-col items-center">
+            <h1 class="font-h1 text-h1 text-primary mb-stack-sm relative inline-block">
+                學習心得
+                <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-[2px] bg-primary/20 rounded-full"></span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                在這裡記錄下每一次閱讀與探索的軌跡，像是翻閱一本承載著知識與靈感的個人手札。
+            </p>
+        </header>
+
+        <!-- Card Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article Card 1 -->
+            <article class="bg-surface-container-lowest rounded-[24px] overflow-hidden border border-primary/5 shadow-[0_10px_30px_-5px_rgba(74,55,40,0.05)] hover:shadow-[0_15px_40px_-5px_rgba(74,55,40,0.1)] hover:-translate-y-2 transition-all duration-400 flex flex-col group relative">
+                <div class="w-full h-48 overflow-hidden relative">
+                    <img alt="學習歷程檔案" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/page1_img1.png"/>
+                </div>
+                <div class="p-6 flex-grow flex flex-col relative bg-surface-container-lowest z-10">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="inline-flex items-center justify-center px-3 py-1 bg-secondary/10 text-secondary rounded-full font-label text-label">
+                            <span class="material-symbols-outlined text-[14px] mr-1">folder</span>學科歷程
+                        </span>
+                        <time class="font-label text-[12px] text-on-surface-variant/60 ml-auto flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px]">calendar_today</span> Apr 30, 2026
+                        </time>
+                    </div>
+                    <h2 class="font-h3 text-h3 text-primary mb-3 line-clamp-2 group-hover:text-secondary transition-colors">
+                        114學年度第二學期 學習歷程檔案
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6 flex-grow">
+                        記錄了一年級下學期的成長點滴。從豐富的課程學習、實作經驗，到我對未來的期許與反思。
+                    </p>
+                    <div class="flex items-center justify-between mt-auto pt-4 border-t border-outline-variant/10">
+                        <a class="font-label text-label text-primary flex items-center gap-1 hover:text-secondary transition-colors" href="portfolio-detail.html">
+                            閱讀更多 <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article Card 2 -->
+            <article class="bg-surface-container-lowest rounded-[24px] overflow-hidden border border-primary/5 shadow-[0_10px_30px_-5px_rgba(74,55,40,0.05)] hover:shadow-[0_15px_40px_-5px_rgba(74,55,40,0.1)] hover:-translate-y-2 transition-all duration-400 flex flex-col group relative">
+                <div class="w-full h-48 overflow-hidden relative">
+                    <img alt="體育學期經驗整理" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/page2_img1.png"/>
+                </div>
+                <div class="p-6 flex-grow flex flex-col relative bg-surface-container-lowest z-10">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="inline-flex items-center justify-center px-3 py-1 bg-tertiary-container/10 text-tertiary-container rounded-full font-label text-label">
+                            <span class="material-symbols-outlined text-[14px] mr-1">fitness_center</span>體育活動
+                        </span>
+                        <time class="font-label text-[12px] text-on-surface-variant/60 ml-auto flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px]">calendar_today</span> May 08, 2026
+                        </time>
+                    </div>
+                    <h2 class="font-h3 text-h3 text-primary mb-3 line-clamp-2 group-hover:text-secondary transition-colors">
+                        117-4 年班體育學期經驗整理
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6 flex-grow">
+                        繪製完體適能雷達圖後的心得整理，包含對五項體適能指標的分析、BMI觀察及未來運動計畫。
+                    </p>
+                    <div class="flex items-center justify-between mt-auto pt-4 border-t border-outline-variant/10">
+                        <a class="font-label text-label text-primary flex items-center gap-1 hover:text-secondary transition-colors" href="sports-detail.html">
+                            閱讀更多 <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Placeholder Card 1 -->
+            <div class="bg-surface-container/30 rounded-[24px] border-2 border-dashed border-outline-variant/40 flex flex-col items-center justify-center p-12 text-center group cursor-default h-full">
+                <span class="material-symbols-outlined text-[48px] text-outline-variant/60 mb-4 group-hover:scale-110 transition-transform">add_circle</span>
+                <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">待新增的心得</p>
+            </div>
+            <!-- Placeholder Card 2 -->
+            <div class="bg-surface-container/30 rounded-[24px] border-2 border-dashed border-outline-variant/40 flex flex-col items-center justify-center p-12 text-center group cursor-default h-full">
+                <span class="material-symbols-outlined text-[48px] text-outline-variant/60 mb-4 group-hover:scale-110 transition-transform">add_circle</span>
+                <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">待新增的心得</p>
+            </div>
+            <!-- Placeholder Card 3 -->
+            <div class="bg-surface-container/30 rounded-[24px] border-2 border-dashed border-outline-variant/40 flex flex-col items-center justify-center p-12 text-center group cursor-default h-full">
+                <span class="material-symbols-outlined text-[48px] text-outline-variant/60 mb-4 group-hover:scale-110 transition-transform">add_circle</span>
+                <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">待新增的心得</p>
+            </div>
+            <!-- Placeholder Card 4 -->
+            <div class="bg-surface-container/30 rounded-[24px] border-2 border-dashed border-outline-variant/40 flex flex-col items-center justify-center p-12 text-center group cursor-default h-full">
+                <span class="material-symbols-outlined text-[48px] text-outline-variant/60 mb-4 group-hover:scale-110 transition-transform">add_circle</span>
+                <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">待新增的心得</p>
+            </div>
+            <!-- Placeholder Card 5 -->
+            <div class="bg-surface-container/30 rounded-[24px] border-2 border-dashed border-outline-variant/40 flex flex-col items-center justify-center p-12 text-center group cursor-default h-full">
+                <span class="material-symbols-outlined text-[48px] text-outline-variant/60 mb-4 group-hover:scale-110 transition-transform">add_circle</span>
+                <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">待新增的心得</p>
+            </div>
+        </div>
+
+        <!-- Pagination Flourish -->
+        <div class="mt-stack-lg flex justify-center items-center gap-4 text-outline/50">
+            <span class="w-2 h-2 rounded-full bg-outline/40"></span>
+            <span class="w-3 h-3 rounded-full bg-outline/60"></span>
+            <span class="w-2 h-2 rounded-full bg-outline/40"></span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest w-full py-xl border-t border-outline-variant/20 mt-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-md">
+            <div class="font-display text-h3 font-bold text-primary">TING_HAO_PORTFOLIO</div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="text-on-surface-variant hover:text-secondary font-label text-[12px] uppercase tracking-widest" href="#">Github</a>
+                <a class="text-on-surface-variant hover:text-secondary font-label text-[12px] uppercase tracking-widest" href="#">LinkedIn</a>
+                <a class="text-on-surface-variant hover:text-secondary font-label text-[12px] uppercase tracking-widest" href="#">文件</a>
+            </div>
+            <div class="font-label text-[12px] text-on-surface-variant/70">
+                © 2026 TING_HAO_PORTFOLIO // 開平餐飲學校
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
