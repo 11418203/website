@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>林廷浩的學習手札 | 個人網站</title>
+    <title>關於我 | 林廷浩的學習手札</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -118,85 +118,77 @@
                 TING_HAO_PORTFOLIO
             </div>
             <div class="hidden md:flex space-x-8 font-display text-body-md font-medium tracking-tight">
-                <a class="text-primary border-b-2 border-primary pb-1 active:scale-95 transform transition-transform" href="index.html">首頁</a>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="index.html">首頁</a>
                 <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="hub.html">學習心得</a>
-                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="about.html">關於我</a>
+                <a class="text-primary border-b-2 border-primary pb-1 active:scale-95 transform transition-transform" href="about.html">關於我</a>
             </div>
             <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label text-label hover:bg-tertiary-container transition-colors shadow-[0_4px_14px_rgba(74,55,40,0.15)] active:scale-95">與我聯絡</button>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="pt-[100px] pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-stack-lg">
-        <!-- Hero Section -->
-        <section class="flex flex-col-reverse md:flex-row items-center gap-stack-md pt-stack-md">
-            <div class="w-full md:w-1/2 space-y-stack-sm text-center md:text-left">
-                <h1 class="font-h1 text-h1 text-primary tracking-tight">追求卓越，持續學習</h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto md:mx-0">
-                    在這裡記錄我的餐飲夢想、成長點滴，以及對未來的無限想像。
-                </p>
-                <div class="pt-unit">
-                    <a href="hub.html" class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-8 py-3 rounded-full font-label text-label hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-[0_4px_14px_rgba(74,55,40,0.1)] active:translate-y-[2px]">
-                        <span>觀看我的學習心得</span>
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-                    </a>
+    <main class="pt-[120px] pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-stack-lg">
+        <header class="mb-stack-lg text-center flex flex-col items-center">
+            <h1 class="font-h1 text-h1 text-primary mb-stack-sm relative inline-block">
+                關於我
+                <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-[2px] bg-primary/20 rounded-full"></span>
+            </h1>
+        </header>
+
+        <!-- About Profile Layout -->
+        <section class="flex flex-col md:flex-row gap-gutter items-start">
+            <!-- Left Column: Image Placeholders -->
+            <div class="w-full md:w-1/3 space-y-stack-md">
+                <!-- User's Future Image Placeholder -->
+                <div class="relative w-full aspect-[4/3] rounded-3xl bg-surface-container/30 border-2 border-dashed border-outline-variant/40 flex flex-col items-center justify-center text-center p-6 group transition-all hover:bg-surface-container/50 cursor-pointer">
+                    <span class="material-symbols-outlined text-[48px] text-outline-variant/60 mb-4 group-hover:scale-110 transition-transform">add_photo_alternate</span>
+                    <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">個人照片預留區</p>
+                    <p class="text-xs text-outline-variant/60 mt-2">（之後可以在此加上您的照片）</p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center md:justify-end">
-                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-[0_20px_40px_-10px_rgba(74,55,40,0.15)] border border-primary/5">
-                    <!-- Using page3_img1 as placeholder for portrait -->
-                    <img alt="Portrait of Lin Ting-hao" class="w-full h-full object-cover" src="assets/images/page3_img1.png"/>
+
+            <!-- Right Column: Text Content -->
+            <div class="w-full md:w-2/3 space-y-stack-md">
+                <!-- About Me Block -->
+                <div class="bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_10px_30px_-5px_rgba(74,55,40,0.05)] border border-primary/10 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-inverse-primary to-surface-container-lowest"></div>
+                    <h2 class="font-h2 text-h2 text-primary mb-stack-sm flex items-center gap-2">
+                        <span class="material-symbols-outlined text-inverse-primary">person</span>
+                        基本資料
+                    </h2>
+                    <div class="space-y-4 font-body-md text-on-surface-variant leading-relaxed mb-6">
+                        <p>
+                            大家好，我是 <strong>林廷浩</strong>。目前就讀於開平餐飲學校 (117-4 班)。
+                        </p>
+                        <p>
+                            這學期在開平的日子裡，我經歷了震撼人心的「拜師大典」，正式踏入餐飲的世界。我渴望成為一位「神秘廚師」，創作能讓客人感受到強烈未知感的料理——那些看起來像一回事，吃起來卻是另一種驚喜的藝術。
+                        </p>
+                    </div>
+
+                    <!-- User's Future Text Placeholder -->
+                    <div class="space-y-4 font-body-md text-on-surface-variant leading-relaxed min-h-[120px] bg-surface-container/10 border border-dashed border-outline-variant/30 rounded-xl p-6 flex flex-col items-center justify-center text-center group transition-all hover:bg-surface-container/20 cursor-pointer">
+                        <span class="material-symbols-outlined text-[32px] text-outline-variant/60 mb-2 group-hover:scale-110 transition-transform">post_add</span>
+                        <p class="font-label text-label text-outline-variant font-medium uppercase tracking-widest">文字敘述預留區</p>
+                        <p class="text-xs text-outline-variant/60 mt-2">（之後可以在此加上更多介紹文字）</p>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Divider -->
-        <div class="flex justify-center items-center py-stack-md opacity-30">
-            <div class="w-2 h-2 rounded-full bg-primary mx-1"></div>
-            <div class="w-2 h-2 rounded-full bg-primary mx-1"></div>
-            <div class="w-2 h-2 rounded-full bg-primary mx-1"></div>
-        </div>
-
-        <!-- Featured Entries -->
-        <section class="pt-stack-md">
-            <h2 class="font-h2 text-h2 text-primary text-center mb-stack-md">精選筆記</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-                <!-- Entry 1 -->
-                <a href="portfolio-detail.html" class="group cursor-pointer block">
-                    <div class="relative h-64 rounded-2xl overflow-hidden mb-4 shadow-[0_10px_30px_-5px_rgba(74,55,40,0.05)]">
-                        <img alt="學習歷程檔案封面" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/page2_img1.png"/>
-                        <div class="absolute inset-0 bg-primary/10 group-hover:bg-primary/0 transition-colors duration-500"></div>
+                <!-- Skills/Focus Card -->
+                <div class="bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_10px_30px_-5px_rgba(74,55,40,0.05)] border border-primary/10">
+                    <h3 class="font-h3 text-h3 text-primary mb-stack-sm">領域焦點</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label text-label">實務操作</span>
+                        <span class="px-4 py-1.5 rounded-full bg-tertiary-fixed-dim/30 text-on-tertiary-container font-label text-label">神秘料理研究</span>
+                        <span class="px-4 py-1.5 rounded-full bg-primary-fixed-dim/30 text-on-primary-fixed-variant font-label text-label">食材特性理解</span>
+                        <span class="px-4 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label text-label">競賽參與</span>
                     </div>
-                    <div class="space-y-2 px-2">
-                        <div class="flex items-center gap-2 text-outline font-label text-[12px] uppercase tracking-wider">
-                            <span class="material-symbols-outlined text-[16px]">calendar_today</span>
-                            Apr 30, 2026
-                        </div>
-                        <h3 class="font-h3 text-h3 text-primary group-hover:text-tertiary-container transition-colors">114學年度第二學期 學習歷程檔案</h3>
-                        <p class="font-body-md text-on-surface-variant line-clamp-2">記錄了一年級下學期的成長點滴，從豐富的課程學習、實作經驗，到對未來的期許與反思。</p>
-                    </div>
-                </a>
-                <!-- Entry 2 -->
-                <a href="sports-detail.html" class="group cursor-pointer block">
-                    <div class="relative h-64 rounded-2xl overflow-hidden mb-4 shadow-[0_10px_30px_-5px_rgba(74,55,40,0.05)]">
-                        <img alt="體育學期經驗整理" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/page1_img1.png"/>
-                        <div class="absolute inset-0 bg-primary/10 group-hover:bg-primary/0 transition-colors duration-500"></div>
-                    </div>
-                    <div class="space-y-2 px-2">
-                        <div class="flex items-center gap-2 text-outline font-label text-[12px] uppercase tracking-wider">
-                            <span class="material-symbols-outlined text-[16px]">calendar_today</span>
-                            May 08, 2026
-                        </div>
-                        <h3 class="font-h3 text-h3 text-primary group-hover:text-tertiary-container transition-colors">117-4 年班體育學期經驗整理</h3>
-                        <p class="font-body-md text-on-surface-variant line-clamp-2">對體適能雷達圖的深入觀察、BMI分析，以及對本學期體育課程的回顧與反思。</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full py-xl border-t border-outline-variant/20 bg-surface-container-lowest">
+    <footer class="w-full py-xl border-t border-outline-variant/20 bg-surface-container-lowest mt-auto">
         <div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-md">
             <div class="font-display text-h3 font-bold text-primary">
                 TING_HAO_PORTFOLIO
